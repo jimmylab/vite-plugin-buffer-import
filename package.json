@@ -1,6 +1,6 @@
 {
   "name": "vite-plugin-buffer-import",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Vite plugin for importing buffer via URL query",
   "type": "module",
   "author": "Jiahuan Liu",
@@ -16,7 +16,7 @@
     ".": {
       "import": {
         "types": "./dist/src/index.d.ts",
-        "default": "./dist/src/index.d.ts"
+        "default": "./dist/src/index.js"
       }
     },
     "./client": {
