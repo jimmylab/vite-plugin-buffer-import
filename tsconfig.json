@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "composite": true,
+    "skipLibCheck": true,
+    "module": "node16",
+    "target": "es2022",
+    "moduleResolution": "node16",
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "lib": ["ES2020", "DOM"],
+    "declaration": true,
+    "strict": true,
+    "outDir": "dist"
+  },
+  "include": ["src", "client.d.ts", "test"]
+}

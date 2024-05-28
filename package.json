@@ -1,0 +1,41 @@
+{
+  "name": "vite-plugin-buffer-import",
+  "version": "1.0.0",
+  "description": "Vite plugin for importing buffer via URL query",
+  "type": "module",
+  "main": "index.js",
+  "author": "Jiahuan Liu",
+  "license": "MIT",
+  "homepage": "https://github.com/jimmylab/vite-plugin-buffer-import",
+  "files": [
+    "dist",
+    "client.d.ts"
+  ],
+  "exports": {
+    ".": {
+      "import": {
+        "types": "./dist/index.d.ts",
+        "default": "./dist/index.d.ts"
+      }
+    },
+    "./client": {
+      "types": "./client.d.ts"
+    }
+  },
+  "scripts": {
+    "build": "tsc",
+    "buildAst": "node ./ast-build.js > src\\ast-base64.ts",
+    "vitebuild": "vite build",
+    "preview": "vite preview",
+    "test": "vite --host"
+  },
+  "dependencies": {
+    "base64-arraybuffer": "^1.0.2",
+    "mime": "^4.0.3",
+    "vite": "^5.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.6",
+    "typescript": "^5.3.3"
+  }
+}
