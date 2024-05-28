@@ -1,3 +1,5 @@
+/// <reference types="../client.d.ts" />
+
 document.getElementById('testA')
 ?.addEventListener('click', async ev => {
   console.time()

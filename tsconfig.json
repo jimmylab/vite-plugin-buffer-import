@@ -12,5 +12,5 @@
     "strict": true,
     "outDir": "dist"
   },
-  "include": ["src", "client.d.ts", "test"]
+  "include": ["src"]
 }
